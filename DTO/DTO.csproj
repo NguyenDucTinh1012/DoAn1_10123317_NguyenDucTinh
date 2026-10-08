@@ -48,6 +48,11 @@
     <Compile Include="MonAnDTO.cs" />
     <Compile Include="NguyenLieuDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="TaiKhoanDTO.cs" />
+    <Compile Include="ThongTinNhanHangDTO.cs" />
+>>>>>>> efb8b0a82fc517c204be103e490b873dc16e44aa
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

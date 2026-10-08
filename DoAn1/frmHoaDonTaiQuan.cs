@@ -89,10 +89,13 @@ namespace DoAn1
         {
 
         }
+<<<<<<< HEAD
 
         private void btnIn_Click(object sender, EventArgs e)
         {
 
         }
+=======
+>>>>>>> efb8b0a82fc517c204be103e490b873dc16e44aa
     }
 }

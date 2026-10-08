@@ -13,8 +13,19 @@ namespace DTO
     {
      
         string maDonHang;
+<<<<<<< HEAD
        DateTime ngayDat;
         public string MaDonHang { get => maDonHang; set => maDonHang = value; }
+=======
+        string maKhachHang;
+        DateTime ngayDat;
+        string trangThai;
+
+        public string MaDonHang { get => maDonHang; set => maDonHang = value; }
+        public string MaKhachHang { get => maKhachHang; set => maKhachHang = value; }
+        public DateTime NgayDat { get => ngayDat; set => ngayDat = value; }
+        public string TrangThai { get => trangThai; set => trangThai = value; }
+>>>>>>> efb8b0a82fc517c204be103e490b873dc16e44aa
 
         public DateTime NgayDat { get => ngayDat; set => ngayDat = value; }
 
@@ -27,6 +38,17 @@ namespace DTO
 
         }
 
+<<<<<<< HEAD
+=======
+        public DonHangDTO(string MaDonHang, string MaKhachHang, DateTime NgayDat, string TrangThai)
+        {
+            this.MaDonHang = MaDonHang;
+            this.MaKhachHang = MaKhachHang;
+            this.NgayDat = NgayDat;
+            this.TrangThai = TrangThai;
+        }
+
+>>>>>>> efb8b0a82fc517c204be103e490b873dc16e44aa
         public DonHangDTO(DataTable row)
         {
             this.MaDonHang = row.Rows[0]["MaDonHang"].ToString();

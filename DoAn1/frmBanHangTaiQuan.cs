@@ -272,9 +272,15 @@ namespace DoAn1
                 DateTime ngayDat = DateTime.Now;
 
                 // Lưu đơn hàng vào bảng DonHang
+<<<<<<< HEAD
                 DonHangDTO donHangDTO = new DonHangDTO(maDonHang,ngayDat);
                 DonHangBUS donHangBUS = new DonHangBUS();
                 if (!donHangBUS.insertDonHang(donHangDTO))
+=======
+                DonHangDTO donHangDTO = new DonHangDTO(maDonHang, null, ngayDat, "Đã xác nhận");
+                DonHangBUS donHangBUS = new DonHangBUS();
+                if (!donHangBUS.insertDonHang2(donHangDTO))
+>>>>>>> efb8b0a82fc517c204be103e490b873dc16e44aa
                 {
                     MessageBox.Show("Lỗi khi lưu đơn hàng!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;

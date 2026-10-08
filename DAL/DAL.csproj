@@ -46,10 +46,17 @@
     <Compile Include="DBconnect.cs" />
     <Compile Include="DonHangDAL.cs" />
     <Compile Include="LoaiMonAnDAL.cs" />
+    <Compile Include="MaHoaTaiKhoan.cs" />
     <Compile Include="MonAnDAL.cs" />
     <Compile Include="NguyenLieuDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="ThongKeDAL.cs" />
+=======
+    <Compile Include="TaiKhoanDAL.cs" />
+    <Compile Include="ThongKeDAL.cs" />
+    <Compile Include="ThongTinNhanHangDAL.cs" />
+>>>>>>> efb8b0a82fc517c204be103e490b873dc16e44aa
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DTO\DTO.csproj">

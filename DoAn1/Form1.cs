@@ -41,12 +41,43 @@ namespace DoAn1
             string tenDangNhap = txtTenDangNhap.Text.Trim();
             string matKhau = txtMatKhau.Text.Trim();
 
+<<<<<<< HEAD
 
                 this.Hide();
                 frmTrangChu frm = new frmTrangChu(); // Truyền cả ba tham số
                 frm.ShowDialog();
                 this.Close();
             
+=======
+            if (taiKhoanBus.KiemTraDangNhap(tenDangNhap, matKhau))
+            {
+                MessageBox.Show("Đăng nhập thành công!", "Thông báo");
+
+                // Lấy quyền người dùng và MaKhachHang
+                DataTable dt = taiKhoanBus.getAllTaiKhoan();
+                string quyen = "Khách hàng";
+                string maKhachHang = null;
+
+                foreach (DataRow row in dt.Rows)
+                {
+                    if (row["TenDangNhap"].ToString() == tenDangNhap)
+                    {
+                        quyen = row["Quyen"].ToString();
+                        maKhachHang = row["MaKhachHang"]?.ToString(); // Lấy MaKhachHang
+                        break;
+                    }
+                }
+
+                this.Hide();
+                frmTrangChu frm = new frmTrangChu(quyen, tenDangNhap, maKhachHang); // Truyền cả ba tham số
+                frm.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Sai tài khoản hoặc mật khẩu!", "Lỗi");
+            }
+>>>>>>> efb8b0a82fc517c204be103e490b873dc16e44aa
         }
 
 

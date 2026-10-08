@@ -51,7 +51,38 @@ namespace DAL
             };
             return getAll(query, parameters);
         }
+<<<<<<< HEAD
     
+=======
+        public DataTable getChiTietDonHangByMaDonHang(string maDonHang)
+        {
+            string query = "SELECT ctdh.MaDonHang, ctdh.MaMonAn, ma.TenMonAn, ctdh.SoLuong, ma.GiaBan, ctdh.ThanhTien, ctdh.ThoiGianDat, " +
+                  "(SELECT SUM(ThanhTien) FROM ChiTietDonHang WHERE MaDonHang = ctdh.MaDonHang) AS TongTien " +
+                  "FROM ChiTietDonHang ctdh " +
+                  "JOIN MonAn ma ON ctdh.MaMonAn = ma.MaMonAn " +
+                  "WHERE ctdh.MaDonHang = @MaDonHang";
+
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+        new SqlParameter("@MaDonHang", maDonHang)
+            };
+            return getAll(query, parameters);
+        }
+        public bool deleteChiTietDonHangByMaDonHang(string maDonHang)
+        {
+            string query = "DELETE FROM ChiTietDonHang WHERE MaDonHang = @MaDonHang";
+            SqlParameter[] parameters = new SqlParameter[] { new SqlParameter("@MaDonHang", maDonHang) };
+            kennoi();
+            using (SqlCommand cmd = new SqlCommand(query, con))
+            {
+                cmd.Parameters.AddRange(parameters);
+                int rowsAffected = cmd.ExecuteNonQuery();
+                dongketnoi();
+                return rowsAffected > 0;
+            }
+
+        }
+>>>>>>> efb8b0a82fc517c204be103e490b873dc16e44aa
 
     }
 }

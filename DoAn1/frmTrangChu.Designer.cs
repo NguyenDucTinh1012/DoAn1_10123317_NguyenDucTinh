@@ -29,10 +29,19 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTrangChu));
+<<<<<<< HEAD
+=======
+            this.btnDonHangCuaBan = new System.Windows.Forms.Button();
+>>>>>>> efb8b0a82fc517c204be103e490b873dc16e44aa
             this.btnDangXuat = new System.Windows.Forms.Button();
             this.btnHeThong = new System.Windows.Forms.Button();
             this.btnBanHangTaiQuan = new System.Windows.Forms.Button();
             this.btnThongKe = new System.Windows.Forms.Button();
+<<<<<<< HEAD
+=======
+            this.btnLichSuDatHang = new System.Windows.Forms.Button();
+            this.btnDonHang = new System.Windows.Forms.Button();
+>>>>>>> efb8b0a82fc517c204be103e490b873dc16e44aa
             this.btnDanhMuc = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -40,17 +49,43 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
+=======
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel2.SuspendLayout();
+>>>>>>> efb8b0a82fc517c204be103e490b873dc16e44aa
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
+<<<<<<< HEAD
             // btnDangXuat
             // 
             this.btnDangXuat.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnDangXuat.Location = new System.Drawing.Point(3, 303);
+=======
+            // btnDonHangCuaBan
+            // 
+            this.btnDonHangCuaBan.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnDonHangCuaBan.Location = new System.Drawing.Point(3, 228);
+            this.btnDonHangCuaBan.Name = "btnDonHangCuaBan";
+            this.btnDonHangCuaBan.Size = new System.Drawing.Size(197, 69);
+            this.btnDonHangCuaBan.TabIndex = 2;
+            this.btnDonHangCuaBan.Text = "Đơn hàng của bạn";
+            this.btnDonHangCuaBan.UseVisualStyleBackColor = true;
+            this.btnDonHangCuaBan.Click += new System.EventHandler(this.btnDonHangCuaBan_Click);
+            // 
+            // btnDangXuat
+            // 
+            this.btnDangXuat.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnDangXuat.Location = new System.Drawing.Point(3, 603);
+>>>>>>> efb8b0a82fc517c204be103e490b873dc16e44aa
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.Size = new System.Drawing.Size(197, 69);
             this.btnDangXuat.TabIndex = 2;
@@ -61,7 +96,11 @@
             // btnHeThong
             // 
             this.btnHeThong.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+<<<<<<< HEAD
             this.btnHeThong.Location = new System.Drawing.Point(3, 228);
+=======
+            this.btnHeThong.Location = new System.Drawing.Point(3, 528);
+>>>>>>> efb8b0a82fc517c204be103e490b873dc16e44aa
             this.btnHeThong.Name = "btnHeThong";
             this.btnHeThong.Size = new System.Drawing.Size(197, 69);
             this.btnHeThong.TabIndex = 2;
@@ -72,7 +111,11 @@
             // btnBanHangTaiQuan
             // 
             this.btnBanHangTaiQuan.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+<<<<<<< HEAD
             this.btnBanHangTaiQuan.Location = new System.Drawing.Point(3, 78);
+=======
+            this.btnBanHangTaiQuan.Location = new System.Drawing.Point(3, 378);
+>>>>>>> efb8b0a82fc517c204be103e490b873dc16e44aa
             this.btnBanHangTaiQuan.Name = "btnBanHangTaiQuan";
             this.btnBanHangTaiQuan.Size = new System.Drawing.Size(197, 69);
             this.btnBanHangTaiQuan.TabIndex = 1;
@@ -83,13 +126,42 @@
             // btnThongKe
             // 
             this.btnThongKe.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+<<<<<<< HEAD
             this.btnThongKe.Location = new System.Drawing.Point(3, 153);
+=======
+            this.btnThongKe.Location = new System.Drawing.Point(3, 453);
+>>>>>>> efb8b0a82fc517c204be103e490b873dc16e44aa
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.Size = new System.Drawing.Size(197, 69);
             this.btnThongKe.TabIndex = 1;
             this.btnThongKe.Text = "Thông kê";
             this.btnThongKe.UseVisualStyleBackColor = true;
             this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
+<<<<<<< HEAD
+=======
+            // 
+            // btnLichSuDatHang
+            // 
+            this.btnLichSuDatHang.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnLichSuDatHang.Location = new System.Drawing.Point(3, 303);
+            this.btnLichSuDatHang.Name = "btnLichSuDatHang";
+            this.btnLichSuDatHang.Size = new System.Drawing.Size(197, 69);
+            this.btnLichSuDatHang.TabIndex = 1;
+            this.btnLichSuDatHang.Text = "Lịch sử đặt hàng";
+            this.btnLichSuDatHang.UseVisualStyleBackColor = true;
+            this.btnLichSuDatHang.Click += new System.EventHandler(this.btnLichSuDatHang_Click);
+            // 
+            // btnDonHang
+            // 
+            this.btnDonHang.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnDonHang.Location = new System.Drawing.Point(3, 153);
+            this.btnDonHang.Name = "btnDonHang";
+            this.btnDonHang.Size = new System.Drawing.Size(197, 69);
+            this.btnDonHang.TabIndex = 1;
+            this.btnDonHang.Text = "Đơn hàng";
+            this.btnDonHang.UseVisualStyleBackColor = true;
+            this.btnDonHang.Click += new System.EventHandler(this.btnDonHang_Click);
+>>>>>>> efb8b0a82fc517c204be103e490b873dc16e44aa
             // 
             // btnDanhMuc
             // 
@@ -102,6 +174,20 @@
             this.btnDanhMuc.UseVisualStyleBackColor = true;
             this.btnDanhMuc.Click += new System.EventHandler(this.btnDanhMuc_Click);
             // 
+<<<<<<< HEAD
+=======
+            // btnDatHang
+            // 
+            this.btnDatHang.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnDatHang.Location = new System.Drawing.Point(3, 78);
+            this.btnDatHang.Name = "btnDatHang";
+            this.btnDatHang.Size = new System.Drawing.Size(197, 69);
+            this.btnDatHang.TabIndex = 0;
+            this.btnDatHang.Text = "Đặt hàng";
+            this.btnDatHang.UseVisualStyleBackColor = true;
+            this.btnDatHang.Click += new System.EventHandler(this.btnDatHang_Click);
+            // 
+>>>>>>> efb8b0a82fc517c204be103e490b873dc16e44aa
             // panel2
             // 
             this.panel2.Controls.Add(this.pictureBox2);
@@ -170,6 +256,35 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Cyan;
+            this.flowLayoutPanel1.Controls.Add(this.btnDanhMuc);
+            this.flowLayoutPanel1.Controls.Add(this.btnDatHang);
+            this.flowLayoutPanel1.Controls.Add(this.btnDonHang);
+            this.flowLayoutPanel1.Controls.Add(this.btnDonHangCuaBan);
+            this.flowLayoutPanel1.Controls.Add(this.btnLichSuDatHang);
+            this.flowLayoutPanel1.Controls.Add(this.btnBanHangTaiQuan);
+            this.flowLayoutPanel1.Controls.Add(this.btnThongKe);
+            this.flowLayoutPanel1.Controls.Add(this.btnHeThong);
+            this.flowLayoutPanel1.Controls.Add(this.btnDangXuat);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 702);
+            this.flowLayoutPanel1.TabIndex = 3;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(200, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(1167, 702);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
             // frmTrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -183,10 +298,15 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmTrangChu_Load);
             this.panel2.ResumeLayout(false);
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
+=======
+>>>>>>> efb8b0a82fc517c204be103e490b873dc16e44aa
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -196,11 +316,20 @@
         private System.Windows.Forms.Button btnDanhMuc;
         private System.Windows.Forms.Button btnDangXuat;
         private System.Windows.Forms.Panel panel2;
+<<<<<<< HEAD
+=======
+        private System.Windows.Forms.Button btnLichSuDatHang;
+        private System.Windows.Forms.Button btnDonHang;
+>>>>>>> efb8b0a82fc517c204be103e490b873dc16e44aa
         private System.Windows.Forms.Button btnThongKe;
         private System.Windows.Forms.Button btnBanHangTaiQuan;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+<<<<<<< HEAD
+=======
+        private System.Windows.Forms.Button btnDonHangCuaBan;
+>>>>>>> efb8b0a82fc517c204be103e490b873dc16e44aa
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.PictureBox pictureBox2;
     }

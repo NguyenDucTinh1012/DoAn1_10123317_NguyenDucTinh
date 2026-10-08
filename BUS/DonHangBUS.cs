@@ -20,7 +20,27 @@ namespace BUS
         {
             return DonHangDAL.insertDonHang(donHang);
         }
+<<<<<<< HEAD
        
+=======
+        public bool insertDonHang2(DonHangDTO donHang)
+        {
+            return DonHangDAL.insertDonHang2(donHang);
+        }
+        public bool deleteDonHang(string maDonHang)
+        {
+            return DonHangDAL.deleteDonHang(maDonHang);
+        }
+        public DataTable SearchDonHang(string keyword)
+        {
+            return DonHangDAL.SearchDonHang(keyword);
+        }
+
+        public bool updateTrangThaiDonHang(string maDonHang, string trangThai)
+        {
+           return DonHangDAL.updateTrangThaiDonHang(maDonHang, trangThai);
+        }
+>>>>>>> efb8b0a82fc517c204be103e490b873dc16e44aa
        
     }
 }
