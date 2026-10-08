@@ -21,12 +21,12 @@ namespace BUS
         {
             return ctdhDAL.ThemChiTietDonHang(ctdh);
         }
-        public bool DeleteChiTietDonHang(string maDonHang, string maMonAn)
-        {
-            return ctdhDAL.DeleteChiTietDonHang(maDonHang, maMonAn);
-        }
-       
-       
+     
 
+        public DataTable getChiTietDonHangByMaDonHang(string maDonHang)
+        {
+            return ctdhDAL.getChiTietDonHangByMaDonHang(maDonHang);
+        }
+        
     }
 }

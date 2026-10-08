@@ -36,8 +36,6 @@
             this.txtTenDangNhap = new System.Windows.Forms.TextBox();
             this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.btnDangNhap = new System.Windows.Forms.Button();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.label4 = new System.Windows.Forms.Label();
             this.chkHienMatKhau = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -101,7 +99,7 @@
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(180, 30);
             this.txtMatKhau.TabIndex = 4;
-            this.txtMatKhau.Text = "adim";
+            this.txtMatKhau.Text = "admin";
             this.txtMatKhau.UseSystemPasswordChar = true;
             // 
             // btnDangNhap
@@ -114,31 +112,6 @@
             this.btnDangNhap.Text = "Đăng nhập";
             this.btnDangNhap.UseVisualStyleBackColor = false;
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.OldLace;
-            this.linkLabel1.DisabledLinkColor = System.Drawing.Color.DodgerBlue;
-            this.linkLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.linkLabel1.Location = new System.Drawing.Point(452, 341);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(88, 25);
-            this.linkLabel1.TabIndex = 6;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Đăng Ký";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(156, 341);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(302, 25);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Bạn chưa có tài khoản hãy nhấn?";
             // 
             // chkHienMatKhau
             // 
@@ -157,8 +130,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(706, 383);
             this.Controls.Add(this.chkHienMatKhau);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.txtMatKhau);
             this.Controls.Add(this.txtTenDangNhap);
@@ -187,8 +158,6 @@
         private System.Windows.Forms.TextBox txtTenDangNhap;
         private System.Windows.Forms.TextBox txtMatKhau;
         private System.Windows.Forms.Button btnDangNhap;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox chkHienMatKhau;
     }
 }

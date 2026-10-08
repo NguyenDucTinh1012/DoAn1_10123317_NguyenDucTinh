@@ -10,7 +10,7 @@ namespace DAL
 {
     public class DBconnect
     {
-        protected SqlConnection con = new SqlConnection("Data Source=.\\SQLEXPRESS;Initial Catalog=DoAn1;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;");
+        protected SqlConnection con = new SqlConnection("Data Source=LAPTOP-K0VFU78E\\SQLEXPRESS;Initial Catalog=DoAn;Integrated Security=True;");
         SqlCommand cmd;
         SqlDataAdapter da;
         DataTable dt;
@@ -49,6 +49,7 @@ namespace DAL
             }
         }
 
+
         // Ham thuc thi cau lenh insert, update, delete
 
         public void thuthisql(string sql)
@@ -57,6 +58,21 @@ namespace DAL
             cmd = new SqlCommand(sql, con);
             cmd.ExecuteNonQuery();
             dongketnoi();
+        }
+        public DataTable getAllWithParam(string query, SqlParameter parameter)
+        {
+           
+                con.Open();
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.Add(parameter);
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                con.Close();
+                return dt;
+            
+           
         }
     }
 }
